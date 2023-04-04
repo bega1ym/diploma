@@ -8,9 +8,8 @@ export default function App() {
 
 
       <nav>
-        <NavLink>
-          
-        </NavLink>
+        <NavLink>Home</NavLink>
+        <NavLink>About</NavLink>
       </nav>
     </div>
   );
