@@ -1,4 +1,4 @@
-import {  Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 
 export default function App() {
@@ -10,7 +10,6 @@ export default function App() {
           <Route path="/about" element={<h2>About</h2>} exact />
         </Routes>
       </Layout>
-      <main></main>
     </div>
   );
 }
