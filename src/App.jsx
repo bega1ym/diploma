@@ -1,15 +1,22 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contacts from "./pages/Contacts";
+import Delivery from "./pages/Delivery";
+import Category from "./pages/Category";
+
 
 export default function App() {
   return (
     <div className="App">
       <Layout>
         <Routes>
-          <Route path="/" element={<h2>Home</h2>} exact />
-          <Route path="/about" element={<h2>About</h2>} exact />
-          <Route path="/contacts" element={<h2>Contacts</h2>} exact />
-          <Route path="/delivery" element={<h2>Delivery</h2>} exact />
+          <Route path="/" element={<Home/>} exact />
+          <Route path="/about" element={<About/>} exact />
+          <Route path="/contacts" element={<Contacts/>} exact />
+          <Route path="/delivery" element={<Delivery/>} exact />
+          <Route path="/category/:path" element ={ <Category/> } />
         </Routes>
       </Layout>
     </div>
