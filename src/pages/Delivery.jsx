@@ -26,20 +26,7 @@ export default function Delivery() {
         of the recipient. Delivery cost from 200 soms.
       </p>
 
-      <p>
-        {" "}
-        In our store you can not only buy an iPhone, Mac computer or iPad
-        tablet, but also other Apple equipment and accessories for it. Asiastore
-        is a place where you will be helped with the choice of equipment, taught
-        how to use it, give advice on the operation of your gadgets and offer
-        high-quality accessories.
-      </p>
-
-      <p>
-        Our store is the only authorized reseller of Apple and Garmin in
-        Kyrgyzstan, as well as the official distributor of JBL & Harman Kardon
-        and smart devices from Yandex
-      </p>
+    
     </div>
   );
 }
