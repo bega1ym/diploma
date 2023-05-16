@@ -1,29 +1,33 @@
-.Layout{
-  max-width: 1400px;
+.Layout {
+  max-width: 789px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-
 }
-.Layout  header {
-  background-color:black;
+.Layout header {
   flex-basis: 100%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: auto;
+  background-color: antiquewhite;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.Layout aside{
+.Layout aside {
   flex: 20% 0 0;
-  background-color: red;
-  text-decoration: dashed;
-  
+  background-color: azure;
 }
 .Layout main {
-  background-color: white;
   flex: 80% 1 1;
+  background-color: rgb(168, 160, 255);
 }
-.Layout footer{
+.Layout footer {
   flex: 100% 0 0;
-  color: white;
-  background-color: rgb(1, 8, 114);
+  background-color: rgb(235, 235, 235);
 }
+@media (max-width: 650px) {
+  .Layout header > .Nav {
+    display: none;
+  }
+} 

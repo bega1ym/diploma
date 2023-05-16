@@ -1,13 +1,17 @@
-.Nav ul{
+.Nav ul {
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  
 }
 .Nav ul li a {
-  color: red;
+  color: tomato;
   padding: 10px;
   display: block;
-  
 }
+
+@media (max-width: 650px) {
+  .Nav ul {
+    flex-direction: column;
+  }
+} 
