@@ -21,14 +21,17 @@ export default function Layout(props) {
         <Nav />
         <NavToggle callback={toggleDrawer} />
         <Drawer open={drawerOpen} toggle={toggleDrawer} />
-          <CartLink />
-          <Auth />
+        <CartLink />
+        <Auth />
       </header>
       <aside>
         <CategoryList />
       </aside>
       <main>{props.children}</main>
-      <footer>FOOTER</footer>
+      <footer>
+      
+        Karakol 2023
+      </footer>
     </div>
   );
 }
