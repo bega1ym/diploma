@@ -3,10 +3,10 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="Contact">
       <h2>Contact Us</h2>
-      <p className="email">Email: example@email.com</p>
-      <p className="phone">Phone: 555-555-5555</p>
+      <p className="Email">Email: example@email.com</p>
+      <p className="Phone">Phone: 555-555-5555</p>
 
 
       <h2>Shop Hours</h2>
