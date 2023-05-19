@@ -1,17 +1,28 @@
-.Nav ul {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
+.Nav .NavItem a {
+  color: #fafbfc;
+  text-decoration: none;
   padding: 0;
-}
-.Nav ul li a {
-  color: tomato;
-  padding: 10px;
-  display: block;
-}
+  margin: 0;
+  height: 10px;
+  transition: 0.3s;
 
-@media (max-width: 650px) {
-  .Nav ul {
-    flex-direction: column;
-  }
-} 
+}
+.NavItem a:hover {
+  background-color: rgba(101, 99, 99, 0.416);
+  padding: 10px;
+  border-radius: 10px;
+}
+.Nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: 80px;
+}
+.Nav {
+  font-family: "Roboto", "Arial","sans-serif";
+
+}
+.Nav a:hover{
+  color: white;
+  transition: 0.3s;
+}
