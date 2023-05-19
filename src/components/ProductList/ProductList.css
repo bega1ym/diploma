@@ -1,8 +1,34 @@
-.ProductList .Product {
+.Product{
   display: flex;
   flex-direction: column;
-  max-width: 200px;
+  background-image:  url("https://phonoteka.org/uploads/posts/2022-02/thumbs/1645151325_1-phonoteka-org-p-mramor-fon-vektor-1.jpg");
+  border-radius: 10px;
+  align-items: center;
+  max-width: 45%;
+  height: 500px;
+  margin-bottom: 40px;
 }
-.ProductList .Product img {
-  width: 100%;
+.ProductList{
+  display: flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  font-family: "Open Sans", "Helvetica Neue",;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(9, 9, 9);
+}
+.ProductList .Product img{
+  margin-top: 70px;
+  padding: 0;
+  width: 70%;
+}
+.Product .Air{
+  margin-top: 140px;
+}
+.Product a{
+  font-family: "Open Sans", "Helvetica Neue",;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(10, 10, 10) ;
+  text-decoration: none;
 }
