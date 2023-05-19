@@ -29,7 +29,6 @@ export default function Layout(props) {
       </aside>
       <main>{props.children}</main>
       <footer>
-      
         Karakol 2023
       </footer>
     </div>
