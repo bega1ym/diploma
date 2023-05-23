@@ -1,9 +1,15 @@
-import "./About.css"
+import "./About.css";
+import video from "../assets/video.mp4"
 
 export default function About() {
   return (
     <div className="About">
       <h2>About Us</h2>
+      <video className="video" controls autoPlay loop>
+        <source 
+        src={video} type="video/mp4" />
+      
+      </video>
       <p>
         We are an online store that specializes in selling smartphones and
         accessories. Here you can find everything you need to accessorize your

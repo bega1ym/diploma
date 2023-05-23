@@ -10,17 +10,16 @@ export default function ProductList({ category }) {
   const { products } = useContext(AppContext);
 
   const output = products
-  .filter(product => product.category === category.id)
-  .map(product => (
-    <div className="Product" key={product.id}>
-      <img src={product.picture} alt={product.name} />
-      <Link to={"/product/" + product.path}>
-        {product.name}
-      </Link>
-      <AddToCart product={product} />
-      <DeleteProduct product={product} />
-    </div>
-  ));
+    .filter((product) => product.category === category.id)
+    .map((product) => (
+      <div className="Product" key={product.id}>
+        <img src={product.picture} alt={product.name} />
+        <Link to={"/product/" + product.path}>{product.name}</Link>
+        {product.price}
+        <AddToCart product={product} />
+        <DeleteProduct product={product} />
+      </div>
+    ));
 
   return (
     <div className="ProductList">

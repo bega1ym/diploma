@@ -1,13 +1,13 @@
 .Product{
   display: flex;
   flex-direction: column;
-  background-image:  url("https://phonoteka.org/uploads/posts/2022-02/thumbs/1645151325_1-phonoteka-org-p-mramor-fon-vektor-1.jpg");
   border-radius: 10px;
   align-items: center;
-  max-width: 45%;
+  width: 40%;
   height: 500px;
   margin-bottom: 40px;
 }
+
 .ProductList{
   display: flex; 
   justify-content: space-around; 
@@ -17,10 +17,17 @@
   font-weight: 500;
   color: rgb(9, 9, 9);
 }
-.ProductList .Product img{
-  margin-top: 70px;
-  padding: 0;
-  width: 70%;
+.ProductList .Product img {
+  width: 250px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0px rgb(205, 105, 139);
+  transition: 200ms;
+  height: 250px;
+}
+
+.ProductList .Product img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 1px rgb(255, 255, 255);
 }
 .Product .Air{
   margin-top: 140px;
@@ -32,3 +39,23 @@
   color: rgb(10, 10, 10) ;
   text-decoration: none;
 }
+.ProductList .Color-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: -10px;}
+  
+  .Product .AddToCart button{
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
