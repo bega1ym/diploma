@@ -16,13 +16,13 @@
   display: inline-block;
   padding: 10px 20px;
   margin-left: 80px;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .Nav {
   font-family: "Roboto", "Arial", "sans-serif";
 }
 .Nav a:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 254, 254);
   transition: 0.3s;
   background-color: rgb(143, 79, 0);
 }
