@@ -20,6 +20,7 @@
 .CategoryList a {
   color: white;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .CategoryList h1 {

@@ -1,4 +1,4 @@
-.Product{
+.Product {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -8,19 +8,19 @@
   margin-bottom: 40px;
 }
 
-.ProductList{
-  display: flex; 
-  justify-content: space-around; 
+.ProductList {
+  display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  font-family: "Open Sans", "Helvetica Neue",;
+  font-family: "Open Sans", "Helvetica Neue";
   font-size: 20px;
   font-weight: 500;
-  color: rgb(9, 9, 9);
+  color: rgb(255, 255, 255);
 }
 .ProductList .Product img {
   width: 250px;
   border-radius: 5px;
-  box-shadow: 0 0 10px 0px rgb(205, 105, 139);
+  box-shadow: 0 0 10px white;
   transition: 200ms;
   height: 250px;
 }
@@ -29,15 +29,16 @@
   transform: scale(1.1);
   box-shadow: 0 0 10px 1px rgb(255, 255, 255);
 }
-.Product .Air{
+.Product .Air {
   margin-top: 140px;
 }
-.Product a{
-  font-family: "Open Sans", "Helvetica Neue",;
+.Product a {
+  font-family: "Open Sans", "Helvetica Neue";
   font-size: 25px;
   font-weight: 700;
-  color: rgb(10, 10, 10) ;
+  color: rgb(255, 248, 248);
   text-decoration: none;
+  margin-top: 25px;
 }
 .ProductList .Color-price {
   display: flex;
@@ -45,17 +46,19 @@
   justify-content: space-between;
   margin-left: 10px;
   margin-right: 20px;
-  margin-top: -10px;}
-  
-  .Product .AddToCart button{
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-  }
+  margin-top: -10px;
+}
+
+.Product .AddToCart button {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+}

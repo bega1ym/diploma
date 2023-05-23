@@ -14,19 +14,23 @@
 .CartList a {
   color: black;
   text-decoration: none;
+  width: 20%;
 }
 .CartItem input {
   width: 60px;
   margin: 30px;
+  width: 10%;
 }
 .CartList output {
   background-color: rgba(0, 0, 0, 0.511);
+  width: 30%;
 }
 
 .CartItem button {
   border-radius: 10px;
   padding: 10px;
   background-color: antiquewhite;
+  width: 30%;
 }
 .glow-on-hover {
   width: 220px;
