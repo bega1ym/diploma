@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import"./Nav.css";
+import "./Nav.css";
 
 export default function Nav() {
   return (
@@ -8,7 +8,7 @@ export default function Nav() {
         <li className="NavItem">
           <NavLink to="/">Home</NavLink>
         </li>
-        <li className="NavItem" >
+        <li className="NavItem">
           <NavLink to="/about">About</NavLink>
         </li>
         <li className="NavItem">
