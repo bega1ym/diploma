@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { logIn, logOut } from "../../firebase";
 import { AppContext } from "../../App";
-import "./Auth.css"
+import "./Auth.css";
 import { NavLink } from "react-router-dom";
 
 export default function Auth() {
@@ -12,12 +12,7 @@ export default function Auth() {
       {user ? (
         <span>
           <div className="img-container">
-            <img
-              src={
-                user?.photoURL
-              }
-              alt="Placeholder"
-            />
+            <img src={user?.photoURL} alt="Placeholder" />
             <div className="img-menu">
               <NavLink to="/support">SupportPage</NavLink>
               <NavLink to="/orders">Orders</NavLink>
