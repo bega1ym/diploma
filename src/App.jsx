@@ -3,7 +3,12 @@ import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import Category from "./pages/Category";
 import { createContext, useEffect, useState } from "react";
-import { onAuthChange, onCategoriesLoad, onOrdersLoad, onProductsLoad } from "./firebase";
+import {
+  onAuthChange,
+  onCategoriesLoad,
+  onOrdersLoad,
+  onProductsLoad,
+} from "./firebase";
 import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
@@ -12,8 +17,6 @@ import Orders from "./pages/Orders";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Delivery from "./pages/Delivery";
-
-
 
 export const AppContext = createContext({
   categories: [],
@@ -57,19 +60,21 @@ export default function App() {
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products, cart, setCart, user, orders }}>
+      <AppContext.Provider
+        value={{ categories, products, cart, setCart, user, orders }}
+      >
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-           <Route path="/about" element={<About />} />
-           <Route path="/contact" element={<Contact />} />
-           <Route path="/delivery" element={<Delivery />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/delivery" element={<Delivery />} />
             <Route path="/category/:path" element={<Category />} />
             <Route path="/product/:path" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/orders" element={<Orders />} />
-            
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
