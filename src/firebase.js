@@ -18,7 +18,7 @@ const firebaseConfig = {
   projectId: "diploma-95bf4",
   storageBucket: "diploma-95bf4.appspot.com",
   messagingSenderId: "337041187053",
-  appId: "1:337041187053:web:1fb819fdddd412ecfc2ce4"
+  appId: "1:337041187053:web:1fb819fdddd412ecfc2ce4",
 };
 
 // Initialize Firebase
