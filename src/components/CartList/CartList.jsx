@@ -34,7 +34,9 @@ export default function CartList() {
           value={cart[product.id]}
         />
         <span>{product.price * cart[product.id]} $ </span>
-        <button class="glow-on-hover" onClick={() => onRemoveClick(product)}>Remove</button>
+        <button class="glow-on-hover" onClick={() => onRemoveClick(product)}>
+          Remove
+        </button>
       </div>
     ));
 
